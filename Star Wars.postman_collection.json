@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "0063f830-0412-4fb5-a318-0f662f76e90f",
+		"name": "Star Wars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api-token-auth/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api-token-auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Personajes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/personajes/personajes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"personajes",
+						"personajes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Personajes Filtro Nombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/personajes/personajes/?nombre=C-3PO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"personajes",
+						"personajes",
+						""
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "C-3PO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Personajes Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "Darth Maul",
+							"type": "default"
+						},
+						{
+							"key": "actor_nombre",
+							"value": "Ray Park",
+							"type": "default"
+						},
+						{
+							"key": "sexo",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "raza",
+							"value": "1",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/personajes/personajes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"personajes",
+						"personajes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peliculas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/peliculas/peliculas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"peliculas",
+						"peliculas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peliculas Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"nombre\": \"The Phantom Menace\",\r\n    \"resumen\": \"Jedi Master Qui-Gon Jinn and his apprentice Obi-Wan Kenobi as they try to protect Queen Padmé Amidala of Naboo\",\r\n    \"estreno\": \"1999-05-16\",\r\n    \"duracion\": 133,\r\n    \"director\": 1,\r\n    \"productores\": [1],\r\n    \"planetas\": [1,2,3],\r\n    \"personajes\": [1,2]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/peliculas/peliculas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"peliculas",
+						"peliculas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Planetas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/peliculas/planetas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"peliculas",
+						"planetas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Planetas Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "Sullust",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/peliculas/planetas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"peliculas",
+						"planetas",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "Token 4e2989ea1d2186c88a4c0c2f0d6c3f9ee4c42da0",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Token",
+			"value": "4e2989ea1d2186c88a4c0c2f0d6c3f9ee4c42da0"
+		}
+	]
+}

@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 
 from .models import Planeta, Director, Productor, Pelicula
-from .serializers import PlanetaSerializer, DirectorSerializer, ProductorSerializer, PeliculaSerializer
+from .serializers import PlanetaSerializer, DirectorSerializer, ProductorSerializer, PeliculaSerializer, GetPeliculaSerializer
 
 
 class PlanetaViewSet(viewsets.ModelViewSet):
@@ -22,3 +22,9 @@ class ProductorViewSet(viewsets.ModelViewSet):
 class PeliculaViewSet(viewsets.ModelViewSet):
     queryset = Pelicula.objects.all()
     serializer_class = PeliculaSerializer
+    
+    def get_serializer_class(self):
+        serializer_class = self.serializer_class
+        if self.action == 'list' or self.action == 'retrieve':
+            serializer_class = GetPeliculaSerializer
+        return serializer_class

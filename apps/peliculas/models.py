@@ -34,6 +34,5 @@ class Pelicula(models.Model):
     planetas = models.ManyToManyField(Planeta, blank=True)
     personajes = models.ManyToManyField(Personaje, blank=True)
     
-    
     def __str__(self):
         return self.nombre
