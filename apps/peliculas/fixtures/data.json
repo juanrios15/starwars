@@ -1,0 +1,138 @@
+[
+    {
+      "model": "peliculas.planeta",
+      "pk": 1,
+      "fields": {
+        "nombre": "Anoat"
+      }
+    },
+    {
+      "model": "peliculas.planeta",
+      "pk": 2,
+      "fields": {
+        "nombre": "Alderaan"
+      }
+    },
+    {
+      "model": "peliculas.planeta",
+      "pk": 3,
+      "fields": {
+        "nombre": "Coruscant"
+      }
+    },
+    {
+      "model": "peliculas.planeta",
+      "pk": 4,
+      "fields": {
+        "nombre": "Dantooine"
+      }
+    },
+    {
+      "model": "peliculas.planeta",
+      "pk": 5,
+      "fields": {
+        "nombre": "Mandalore"
+      }
+    },
+
+    {
+      "model": "peliculas.director",
+      "pk": 1,
+      "fields": {
+        "nombre": "George Lucas"
+      }
+    },
+    {
+      "model": "peliculas.director",
+      "pk": 2,
+      "fields": {
+        "nombre": "Gareth Edwards"
+      }
+    },
+    {
+      "model": "peliculas.director",
+      "pk": 3,
+      "fields": {
+        "nombre": "Ron Howard"
+      }
+    },
+
+    {
+      "model": "peliculas.productor",
+      "pk": 1,
+      "fields": {
+        "nombre": "Gary Kurtz"
+      }
+    },
+    {
+      "model": "peliculas.productor",
+      "pk": 2,
+      "fields": {
+        "nombre": "Howard Kazanjian"
+      }
+    },
+    {
+      "model": "peliculas.productor",
+      "pk": 3,
+      "fields": {
+        "nombre": "Rick McCallum"
+      }
+    },
+    {
+      "model": "peliculas.productor",
+      "pk": 4,
+      "fields": {
+        "nombre": "Kathleen Kennedy"
+      }
+    },
+    {
+      "model": "peliculas.productor",
+      "pk": 5,
+      "fields": {
+        "nombre": "Michelle Rejwan"
+      }
+    },
+
+    {
+      "model": "peliculas.pelicula",
+      "pk": 1,
+      "fields": {
+        "nombre": "Star wars",
+        "resumen": " the galaxy is ruled by the tyrannical Galactic Empire, the story focuses on a group of freedom fighters known as the Rebel Alliance, who aim to destroy the Empire's newest weapon, the Death Star.",
+        "estreno": "1977-05-25",
+        "duracion": 121,
+        "director": 1,
+        "productores": [1],
+        "planetas": [2,3,4],
+        "personajes": [1,2]
+      }
+    },
+    {
+      "model": "peliculas.pelicula",
+      "pk": 2,
+      "fields": {
+        "nombre": "The Empire Strikes Back",
+        "resumen": "he battle between the malevolent Galactic Empire, led by the Emperor, and the Rebel Alliance, led by Princess Leia.",
+        "estreno": "1980-05-21",
+        "duracion": 124,
+        "director": 2,
+        "productores": [1,2],
+        "planetas": [1,2,3,4],
+        "personajes": [1,2,3,4]
+      }
+    },
+    {
+      "model": "peliculas.pelicula",
+      "pk": 3,
+      "fields": {
+        "nombre": "Return of the Jedi",
+        "resumen": "the Galactic Empire is constructing a second Death Star to exterminate the Rebel Alliance.",
+        "estreno": "1983-05-25",
+        "duracion": 132,
+        "director": 3,
+        "productores": [3,4],
+        "planetas": [1,2,5],
+        "personajes": [3,4,5]
+      }
+    }
+  ]

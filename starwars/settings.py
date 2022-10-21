@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     
     'apps.peliculas',
     'apps.personajes',
+    'apps.users'
     
 ]
 

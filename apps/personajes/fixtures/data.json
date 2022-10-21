@@ -1,0 +1,73 @@
+[
+    {
+      "model": "personajes.raza",
+      "pk": 1,
+      "fields": {
+        "nombre": "Humana"
+      }
+    },
+    {
+      "model": "personajes.raza",
+      "pk": 2,
+      "fields": {
+        "nombre": "Wookie"
+      }
+    },
+    {
+      "model": "personajes.raza",
+      "pk": 3,
+      "fields": {
+        "nombre": "Droide"
+      }
+    },
+    {
+      "model": "personajes.personaje",
+      "pk": 1,
+      "fields": {
+        "nombre": "Luke Skywalker",
+        "actor_nombre": "Mark Hamill",
+        "sexo": 2,
+        "raza": 1
+      }
+    },
+    {
+      "model": "personajes.personaje",
+      "pk": 2,
+      "fields": {
+        "nombre": "Han Solo",
+        "actor_nombre": "Harrison Ford",
+        "sexo": 2,
+        "raza": 1
+      }
+    },
+    {
+      "model": "personajes.personaje",
+      "pk": 3,
+      "fields": {
+        "nombre": "Lando Calrissian",
+        "actor_nombre": "Billy Dee Williams",
+        "sexo": 2,
+        "raza": 1
+      }
+    },
+    {
+      "model": "personajes.personaje",
+      "pk": 4,
+      "fields": {
+        "nombre": "Chewbacca",
+        "actor_nombre": "Peter Mayhew",
+        "sexo": 2,
+        "raza": 2
+      }
+    },
+    {
+      "model": "personajes.personaje",
+      "pk": 5,
+      "fields": {
+        "nombre": "C-3PO",
+        "actor_nombre": "Anthony Daniels",
+        "sexo": 3,
+        "raza": 3
+      }
+    }
+  ]
